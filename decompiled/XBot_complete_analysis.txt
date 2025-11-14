@@ -1,0 +1,2186 @@
+================================================================================
+XBot Complete Bytecode Analysis
+================================================================================
+
+STRINGS:
+================================================================================
+'\nClass-based refactor that keeps rendering identical while organizing:\n  - State\n  - Async tasks\n  - UI wiring\n  - Dialogs / handlers\nPublic wrappers `bootstrap(page)` and `main(page, restore=False)` delegate here.\n'
+'\nPublic bootstrap entry, identical to previous behavior.\nIt renders the identity screen (create/restore) and moves to main().\n'
+'\nPublic main entry, identical to previous behavior.\n'
+'\nRebuilds the original `bootstrap(page)` screen as class methods.\nVisuals/behavior unchanged.\n'
+'\nRebuilds the original `main(page, restore=False)` screen, wired to class state.\n'
+'\nUpdate status text for a given profile id (pid) in red\nand pause the bot.\n'
+'\nUpdate status text for a given profile id (pid).\n'
+"\nkind: 'id' | 'model'\nShows a dialog where user edits Browser ID or Model Name,\napplies it locally, then proceeds to payment.\n"
+'\npurchase_ui = self.PurchaseUI(\n    on_crypto_click=lambda e: self.page.run_task(self._handle_crypto_click, e, purchase_ui, self.page),\n    on_apply_coupon=lambda e: self.page.run_task(self._handle_apply_coupon, e, purchase_ui, self.page),\n)\n\nself.page.dialog = ft.AlertDialog(\n    title=ft.Column(spacing=4, controls=[\n        ft.Text(product + f" - Cost: {cost}$", size=16, weight=ft.FontWeight.BOLD),\n        ft.Text(details or "", size=12, color=ft.Colors.GREY_400)\n    ]),\n    modal=False,\n    content=ft.Container(content=purchase_ui.view(), height=290, width=685),\n    actions=[ft.TextButton("Close", on_click=lambda e: (setattr(self.page.dialog, "open", False), self.page.update()))],\n    actions_alignment=ft.MainAxisAlignment.END,\n    content_padding=20,\n)\nself.page.dialog.open = True\nself.page.open(self.page.dialog)\nself.page.update()\n'
+' '
+' ($'
+' (100% off)'
+' Drops'
+' Min'
+' Reset to Default '
+' days'
+' from license?'
+' or all profiles under this license.'
+' to '
+'#'
+'#000000AA'
+'#000000CC'
+'#004E92'
+'#00ff93'
+'#0F2027'
+'#121317'
+'#1A1B1F'
+'#1A1C1F'
+'#1A1C20'
+'#1A6D51'
+'#1C1E22'
+'#1C7F5D'
+'#1E1E1E'
+'#1E2125'
+'#1F2125'
+'#1F2B32'
+'#202225'
+'#20E3B2'
+'#222428'
+'#225C90'
+'#25282D'
+'#25292E'
+'#27ED99'
+'#2A2D31'
+'#2A2D32'
+'#2C5364'
+'#2CCCFF'
+'#2F3337'
+'#333333'
+'#3A3F44'
+'#3A3F4A'
+'#3A7BD5'
+'#3C1053'
+'#444444'
+'#472B77'
+'#4A505E'
+'#661818'
+'#6E2E6B'
+'#777777'
+'#7A3EAD'
+'#7A5E1A'
+'#9B4E8B'
+'#9BA8AC'
+'#A0A0A0'
+'#AAAAAA'
+'#AD5389'
+'#C13A24'
+'#D64040'
+'#E74C3C'
+'#EAEAEA'
+'#F4B740'
+'#FAFAFA'
+'#FF3B30'
+'#FFFFFF'
+'#{:02X}{:02X}{:02X}'
+'%'
+'%I:%M %p'
+'%a, %d %b %Y %H:%M:%S %Z'
+'&amount='
+'&light=ededed&dark=272a2f&margin=1&size=200'
+')'
+'- Optionally schedule or alternate profiles for better control.'
+'- This license allows unlimited Slave instances targeting one Main account.'
+'. '
+'.settings.json'
+'.xbot_profiles.json'
+'/'
+'/clients/create'
+'/clients/licenses/link'
+'/clients/restore'
+'/licenses/'
+'0.000'
+'0.005'
+'02'
+'02d'
+'1-Slave'
+'1/3 Leniency'
+'1/4 Leniency'
+'1/5 Leniency'
+'1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa'
+'628883768'
+':'
+': '
+':00'
+'?'
+'@'
+'@main_account'
+'A secure password helps manage your licenses across devices.'
+'Add'
+'Add License'
+'Add License Tag'
+'Add New License'
+'Add New Profile'
+'Add Tag'
+'Additional Services'
+'Address: Loading...'
+'Address: [select payment method]'
+'Advanced Filters'
+'After Drops'
+'Alternate Run (Optional)'
+'Amount: '
+'Amount: Loading...'
+'Amount: [select payment method]'
+'Amount: discounted (50% off)'
+'Apply'
+'Applying coupon...'
+'Are you sure you want to pause profile '
+'Assume invalid room requirement as 3'
+'Ban recorded: '
+'Basic Drop Settings'
+'Begin in'
+'Browser ID'
+'BrowserID'
+'Cancel'
+'Change Browser ID'
+'Change Settings'
+'Choose to pause profile '
+"Click 'Add License' if you already have one,\nor 'Purchase License' to get started."
+'Client ID must be a valid UUID.'
+'Close'
+'Confirm Removal'
+'Confirm password'
+'Continue to payment'
+'Coupon invalid or expired'
+'Create & Continue'
+'Create a password'
+'Delete'
+'Direct Funnel'
+"Don't Send GIF"
+'Drop GIF even if not enough participants/messages'
+'Drop Limit'
+'Drop Message'
+'Drop Sleep Period'
+'Edit '
+'Edit License Info'
+'Enter Browser ID'
+'Enter Coupon Code'
+'Enter License Key'
+'Enter tag'
+'Error stopping bot for '
+'Expires at: '
+'Expires in '
+'Expires in: [select payment method]'
+'Expires: '
+'Expires: Loading...'
+'Expiry'
+'Expiry Date'
+'ExpiryDate'
+'Failed to load profiles:'
+'Failed to load settings:'
+'Failed to register identity.'
+'Failed to save profiles:'
+'Failed to save settings:'
+'GIF Keyword'
+'GIF Options'
+'Got A Coupon?'
+'Group Skip %'
+'ID'
+'ID: '
+'INFINITE MAINS'
+'INFINITE SLAVES'
+'Idle'
+'Incorrect credentials or identity not found.'
+'Infinite Mains'
+'Infinite Slaves'
+'Inter'
+'Invalid expiry date'
+'LIFETIME'
+'LIFETIME 1-Slave'
+'LIFETIME Infinite Mains'
+'LIFETIME Infinite Slaves'
+'LIFETIME Main'
+'Last error: '
+'Launching...'
+'Leniency Controls'
+'License Health Report'
+'License Type Info'
+'License Type: '
+'License link failed:'
+'Load'
+'Load all_settings and saved_profiles from JSON (sync).'
+'Load subprofiles from JSON if present.'
+'Main'
+'Make license last forever!'
+'Manage and monitor all licenses in one place'
+'Manage your identity to restore licenses across devices.'
+'Model'
+'Model Name'
+'New User'
+'New User Setup'
+'No Licenses Added Yet'
+'No bans or suspensions'
+'No bot found for '
+'No recent errors'
+'OK'
+'PAUSE'
+'Password must be at least 8 characters.'
+'Passwords do not match.'
+'Pause'
+'Pause All'
+'Pause Options'
+'Paused'
+'Persist all_settings and saved_profiles to JSON (sync).'
+'Persist subprofiles for Infinite licenses to JSON.'
+'Please purchase from @PurchaseTwitterXBot on Telegram instead.'
+'Proceed to Payment'
+'Profile already loaded!'
+'Profile already saved'
+'Profile loaded!'
+'Profile name'
+'Profile not found!'
+'Profile saved!'
+'Profiles'
+'Purchase License'
+'PurchaseUI'
+'Push latest settings into the running bot if it exists.'
+'Quick Save Profile'
+'REMOVE'
+'REPORT'
+'RUN'
+'Randomize GIF Keyword'
+'Rate Limit Sleep'
+'Remove'
+'Remove browser ID '
+'Renew '
+'Renew 1 Month ($'
+'Renew Infinite Mains'
+'Renew Infinite Slaves'
+'Renew License'
+'Renew Main/1-Slave'
+'Restore'
+'Restore & Continue'
+'Restore Identity'
+'Restore exception:'
+'Restore failed: '
+'Restore failed: invalid JSON'
+'Restore failed: licenses not a list'
+'Run'
+'Run All'
+'Run Settings'
+'Runtime: '
+'SCHEDULED'
+'SETTINGS'
+'Save'
+'Save Profile'
+'Save Settings'
+'Saved Profiles'
+'Schedule Run (Optional)'
+'Schedule cancelled, press run to start.'
+'Scheduled'
+'Scheduled to start in '
+'Select Payment Option'
+'Server unreachable. Try again.'
+'Settings'
+'Single Slave'
+'Skip accounts missing followers'
+'Skip chudai/wataa tweets'
+'Skip non-OF links'
+'Slave'
+'Startup Error'
+'Suspension / Ban'
+'TOTAL: $'
+'Temporarily Unavailable'
+'This license allows unlimited Main instances across different browser IDs.'
+'This license runs on a single browser and funnels results directly to your account.'
+'This license runs on a single browser and funnels results to a linked Main account.'
+'Unknown'
+'Unknown license type.'
+'Unlimited Browser IDs'
+'Updating '
+'Upgrade to Infinite '
+'Upgrade to Infinite Mains'
+'Upgrade to Infinite Slaves'
+'Upgrade to Lifetime '
+'Upgrade to Lifetime ($'
+'Use your saved credentials to recover your XBOT licenses.'
+'User: '
+'Validation Error'
+'Welcome to XBOT'
+'XBOT Dashboard'
+'XBot V2.1'
+'XBot:client_id'
+'XBot:password'
+'XBotApp'
+'XBotApp.PurchaseUI'
+'You already own the highest upgradable tier.\nEnjoy infinite instances!'
+'Your Client ID'
+'Your Password'
+'[DEBUG] No settings file found'
+'[DEBUG] Settings file empty'
+'[DEBUG] Settings loaded from'
+'[DEBUG] Settings saved sync:'
+'[DEBUG] all_settings keys after load:'
+'[DEBUG] all_settings keys:'
+'[DEBUG] saved_profiles keys after load:'
+'[DEBUG] saved_profiles keys:'
+'^[0-9a-fA-F-]{36}$'
+'_'
+'_APP_SINGLETON'
+'_Control__page'
+'__main__'
+'active'
+'addon1'
+'addon2'
+'after_drops'
+'all_settings'
+'alternate'
+'anim_task'
+'assume_invalid_room_as_three'
+'background.jpg'
+'bar'
+'bgcolor'
+'black'
+'bot'
+'browser_id'
+'cancel_scheduled'
+'colors_hex'
+'count'
+'dev_ban'
+'dot'
+'drop_count'
+'drop_gif_on_incomplete_group'
+'drop_limit'
+'drop_message'
+'drop_sleep'
+'drop_text'
+'easeInOut'
+'easeOut'
+'error'
+'error_case'
+'existing'
+'expanded'
+'expiry'
+'found bot'
+'free100'
+'gif_keyword'
+'gradient'
+'group_skip'
+'half50'
+'https://quickchart.io/qr?text='
+'https://rsms.me/inter/font-files/Inter-Regular.otf?v=3.19'
+'icon'
+'id'
+'idle'
+'infinite'
+'key'
+'kind'
+'last_error'
+'leniency_1_3'
+'leniency_1_4'
+'leniency_2_5'
+'license'
+'license_key'
+'licenses'
+'message'
+'minutes'
+'model'
+'monospace'
+'new'
+'no_gif'
+'open'
+'page'
+'pause'
+'paused'
+'pid'
+'profile_'
+'profiles'
+'profiles every'
+'r'
+'randomize'
+'rate_limit_sleep'
+'reset_ui error:'
+'restore'
+'return'
+'run'
+'run_btn'
+'run_text'
+'runtime'
+'runtime_task'
+'saved_profiles'
+'scale'
+'schedule'
+'scheduled'
+'scheduled_start_time'
+'scheduled_task'
+'selected'
+'settings'
+'skip_chudai'
+'skip_missing_followers'
+'skip_non_of_link'
+'start'
+'state'
+'status'
+'status_bar'
+'tag'
+'task'
+'total'
+'transparent'
+'true'
+'type'
+'ui'
+'user'
+'utf-8'
+'value'
+'w'
+'white'
+'{value}'
+'~'
+'••••••••••• HIDDEN LICENSE KEY •••••••••••'
+'ℹ️ A 1-Slave License runs on your account and funnels to a Main account.\n\n• Valid for 1 month\n• Locked to 1 Dolphin Anty Browser ID\n• Tied to 1 Main @Username'
+'ℹ️ A Main License runs directly on your account and funnels directly to your account.\n\n• Valid for 1 month\n• Locked to 1 Dolphin Anty Browser ID\n'
+'ℹ️ Enter data to proceed'
+'⏳ Checking...'
+'⚠️ Browser ID already exists'
+'⚠️ Input required'
+'⚠️ License already added'
+'⚠️ License expired. Please renew or purchase another.'
+'✅ License valid'
+'✅ You already own the highest upgradable tier.\nEnjoy Lifetime usage!'
+'❌ Invalid Browser ID'
+'❌ Invalid UUID format'
+'❌ License not found'
+"❌ Must start with '@'"
+'💖 Hit my pinned post 💖\nPlease add me to your groups'
+
+
+NAMES:
+================================================================================
+.0
+ACCENT
+ADD_CARD
+ADD_CIRCLE
+API_BASE
+AUTO
+AlertDialog
+Animation
+AsyncClient
+AsyncRunner
+BLACK
+BLACK12
+BLACK45
+BLACK87
+BLUE
+BLUE_300
+BOLD
+BoxShadow
+ButtonStyle
+CALENDAR_MONTH
+CENTER
+CHECK_CIRCLE_OUTLINE
+CLIENT_ID
+CLIENT_PASSWORD
+CLOSE
+COVER
+CREDIT_CARD
+CRYPTO_OPTIONS
+CYAN_100
+Checkbox
+Colors
+Column
+Container
+ControlState
+CrossAxisAlignment
+DEFAULT
+DEFAULT_QR
+DEFAULT_SETTINGS
+DELETE
+DEVICE_HUB
+DISABLED
+DOWNLOAD_DONE
+DRIVE_FILE_RENAME_OUTLINE
+Divider
+DolphinBot
+Dropdown
+EDIT_COLOR
+EDIT_NOTE
+END
+ElevatedButton
+Exception
+FAST
+FontWeight
+GREEN_700
+GREEN_800
+GREEN_900
+GREY_200
+GREY_400
+GREY_500
+GREY_600
+GREY_800
+HEALTH_AND_SAFETY
+IDLE
+INFO
+Icon
+IconButton
+Icons
+Image
+ImageFit
+KEYBOARD_ARROW_DOWN
+KEYBOARD_DOUBLE_ARROW_UP
+LOADING_QR
+LOCK_RESET_OUTLINED
+LOGIN_OUTLINED
+LinearGradient
+MainAxisAlignment
+Margin
+Offset
+Option
+PAUSE_CIRCLE_OUTLINE
+PAUSE_COLOR
+PERSON_ADD_ALT_1_OUTLINED
+PERSON_OUTLINE
+PRICES
+PRIMARY_GRADIENT
+PROFILE_FILE
+PURCHASE_EXPIRY_HOURS
+Padding
+Page
+ProgressBar
+PurchaseUI
+REPORT_COLOR
+Ref
+ResponsiveRow
+Rotate
+RoundedRectangleBorder
+Row
+SAVE
+SCHEDULE
+SERVICE_CLIENT_ID
+SERVICE_PASSWORD
+SETTINGS
+SETTINGS_FILE
+SHOPPING_CART_OUTLINED
+SMOOTH
+SPACE_BETWEEN
+START
+SUBTLE
+SUBTLE_C
+SUCCESS
+Scale
+ScrollMode
+Slider
+Stack
+TEXT
+TEXT_C
+TIMELAPSE_OUTLINED
+TRANSPARENT
+Text
+TextAlign
+TextButton
+TextField
+TextStyle
+Theme
+UPGRADE
+UPLOAD
+VISIBILITY
+VISIBILITY_OFF
+VPN_KEY_OUTLINED
+VerticalDivider
+WARN
+WARNING_AMBER_ROUNDED
+WHITE
+W_500
+W_600
+XBotApp
+YELLOW_700
+_
+_APP_SINGLETON
+__annotations__
+__doc__
+__firstlineno__
+__init__
+__module__
+__name__
+__qualname__
+__static_attributes__
+_add_license_to_data
+_animate_particles
+_avg_hex
+_build_crypto_selector
+_check_license
+_configure_page_window
+_ensure_pid_state
+_fancy_button
+_fatal_status_ui
+_get_app
+_handle_apply_coupon
+_handle_crypto_click
+_idle_breathing
+_license_card
+_license_of_pid
+_link_license_remote
+_load_profiles_local
+_load_settings_local
+_open_edit_purchase_dialog
+_particles
+_profile_row
+_prompt_tag_input
+_render_bootstrap
+_render_licenses
+_render_main_dashboard
+_restore_licenses
+_run_automation
+_running_glow
+_runtime_counter
+_save_profiles_local
+_save_settings_local
+_scheduled_countdown
+_set_paused
+_set_scheduled
+_show_add_license_dialog
+_show_add_profile_dialog
+_show_health_status_popup
+_show_license_type_popup
+_show_purchase_license_dialog
+_show_purchase_page
+_show_renew_license_dialog
+_show_run_confirmation_dialog
+_show_settings_dialog
+_toggle_license_key_visibility
+_toggle_profiles
+_toggle_run
+_update_bot_settings
+_update_gif_progress
+_update_license_status
+_update_status_ui
+_update_tag
+a
+accounts
+action_button
+action_control
+actions
+actions_row
+active
+add
+add_btn
+addon
+addon1_sub
+addon2_sub
+addon2_title
+address
+address_label
+advanced_group
+aiofiles
+alignment
+all
+all_settings
+alternate_loop
+alternate_switch
+amount
+amount_label
+animate_height
+animate_opacity
+animate_particles
+animation
+any
+app
+append
+apply_btn
+async_runner
+asyncio
+automation
+avg_color
+b
+b_sum
+ban_icon_color
+ban_text
+bar
+base
+base_key
+base_price
+basic_group
+batch
+batch_delay
+bgcolor
+bool
+bootstrap
+border
+border_color
+border_radius
+bot
+bottom_center
+browser_id
+bs
+btn
+button
+c
+cancel
+card
+center
+center_left
+center_right
+cid
+cleanup
+clear
+clear_crypto_selection
+client
+close_btn
+close_dialog
+close_icon
+close_settings
+color
+color_map
+color_sources
+colors
+colors_hex
+confirm_button
+confirm_dialog
+confirm_remove
+constants
+content
+content_body
+control
+controls
+copy
+cost
+count
+coupon
+coupon_input
+cpw
+crypto_button
+crypto_selector
+ctrl
+current
+data
+data_value
+datetime
+days
+default
+delay_minutes
+delayed
+delayed_all
+delta
+descriptions
+detail
+details
+dialog
+dialog_content
+dialog_mode
+dict
+disabled
+discounted_amount
+divmod
+dot
+drop_limit
+drop_message_input
+drop_text
+dropdown
+dumps
+duration
+e
+edit_btn
+edit_text
+entry
+enumerate
+error_case
+error_color
+error_icon_color
+error_text
+ev
+ex
+exists
+expand_icon
+expanded
+expanduser
+expires_label
+expiry
+expiry_date
+expiry_dt
+expiry_icon_color
+expiry_label
+expiry_raw
+expiry_row
+expiry_text
+explanation
+f
+fade
+fonts
+format
+ft
+future
+g
+g_sum
+generate_particles
+generate_shimmering_dust
+get
+get_password
+getattr
+gif_group
+go_to_payment_lifetime
+go_to_payment_renew
+gradient
+group_box
+gs
+h
+handler
+has_error
+header_row
+header_title
+health_row
+height
+hex_color
+hex_to_rgb
+hint
+httpx
+i
+icon
+icon_color
+icon_type
+id
+ident
+identifier
+idle
+idx
+index
+infinite_price
+info
+insert
+int
+is_selected
+is_upgradeable
+isdigit
+isinstance
+items
+join
+json
+k
+key
+keyring
+keys
+kind
+l
+label
+labeled_dropdown
+labeled_slider
+layout
+len
+leniency_bundle
+lic
+lic_type
+license_column
+license_data
+license_key
+license_key_row
+licenses
+lifetime_btn
+lifetime_message
+lifetime_price
+link_remote
+list
+loads
+local_profiles
+lower
+lstrip
+m
+main
+make_field
+margin
+match
+math
+max
+max_opacity
+max_val
+maximizable
+message
+message_group
+min
+min_opacity
+min_val
+mins
+mode
+mode_tabs
+model
+msg
+n
+name
+new_entry
+new_id
+new_mode
+new_settings
+new_type
+next
+no_gif_check
+now
+on_add
+on_alternate_toggle
+on_apply_coupon
+on_change
+on_click
+on_close
+on_crypto_click
+on_proceed
+on_run_click
+on_schedule_toggle
+on_upgrade_click
+only
+opacity
+open
+options
+options_column
+os
+override
+p
+padding
+page
+particles
+password
+path
+pause_all
+pause_dialog
+pause_only
+paused
+payment_currency
+pi
+pid
+pids
+pop
+post
+price
+print
+proceed_button
+proceed_to_payment
+product
+profile
+profile_group
+profile_ids
+profiles
+pw
+qr_image
+quantity
+r
+r_sum
+range
+re
+read
+remaining
+remaining_days
+remove_btn
+remove_text
+renew_btn
+renew_price_key
+report_btn
+report_text
+res
+reset_ui
+resizable
+restore
+rgb
+rgb_to_hex
+right_controls
+rotate
+rs
+run
+run_all
+run_all_button
+run_all_colors
+run_all_text
+run_bootstrap
+run_btn
+run_colors
+run_main
+run_single
+run_task
+run_text
+run_text_val
+runner
+runtime
+runtime_text
+s
+save_icon_btn
+save_profile
+save_settings_btn
+save_tag
+saved_client_id
+saved_password
+saved_profiles
+scale
+schedule_switch
+scheduled
+scheduled_breathing
+scrapers
+seconds
+secs
+selected
+selected_crypto_btn
+selector_button
+self
+set_password
+set_selected_crypto
+setattr
+settings
+shadow
+should_show_pause_all
+show_keys
+skip_countdown
+sleep
+speed
+src
+st
+startswith
+state
+states
+status
+status_bar
+status_code
+status_color
+status_label
+stop
+str
+strength
+strftime
+strip
+strptime
+style
+submit_existing
+submit_new
+suffix
+sum
+symmetric
+tag
+tag_row
+targets
+text
+text_element
+text_hint
+theme
+timedelta
+title
+to
+to_rgb
+toggle_existing_visibility
+toggle_new_visibility
+toggle_no_gif
+toggle_randomize
+top_center
+total
+total_seconds
+tuple
+typ
+ui
+ui_entry
+update
+update_settings
+upgrade_price_key
+upper
+url
+uuid
+uuid4
+v
+val
+validate
+value
+view
+visible
+w
+warn_color
+width
+window
+window_height
+window_width
+with_opacity
+write
+
+
+FUNCTIONS:
+================================================================================
+def <module>():
+    # Local vars: 
+    # Line: 1
+    pass
+
+def XBotApp():
+    # Local vars: 
+    # Line: 22
+    pass
+
+def XBotApp.__init__(self):
+    # Local vars: self, SERVICE_CLIENT_ID, SERVICE_PASSWORD
+    # Line: 34
+    pass
+
+def XBotApp.run_bootstrap(self, page):
+    # Local vars: self, page
+    # Line: 93
+    pass
+
+def XBotApp.run_main(self, page, restore):
+    # Local vars: self, page, restore
+    # Line: 102
+    pass
+
+def XBotApp._configure_page_window(self, page):
+    # Local vars: self, page
+    # Line: 115
+    pass
+
+def XBotApp._license_of_pid(self, pid):
+    # Local vars: self, pid, lic
+    # Line: 134
+    pass
+
+def XBotApp._license_of_pid.<genexpr>(.0):
+    # Local vars: .0, p
+    # Line: 136
+    pass
+
+def XBotApp._ensure_pid_state(self, pid):
+    # Local vars: self, pid
+    # Line: 140
+    pass
+
+def XBotApp._avg_hex(self, colors_hex):
+    # Local vars: self, colors_hex, to_rgb, rs, gs, bs, c, r, g, b, n
+    # Line: 156
+    pass
+
+def XBotApp._avg_hex.to_rgb(h):
+    # Local vars: h
+    # Line: 159
+    pass
+
+def XBotApp._render_bootstrap(self):
+    # Local vars: self, TEXT_C, SUBTLE_C, ACCENT, saved_client_id, saved_password, toggle_new_visibility, toggle_existing_visibility, submit_new, submit_existing, layout, particles, animate_particles
+    # Line: 171
+    pass
+
+def XBotApp._render_bootstrap.close_dialog():
+    # Local vars: 
+    # Line: 201
+    pass
+
+def XBotApp._render_bootstrap.<lambda>(e):
+    # Local vars: e
+    # Line: 209
+    pass
+
+def XBotApp._render_bootstrap.show_snackbar(msg):
+    # Local vars: msg
+    # Line: 213
+    pass
+
+def XBotApp._render_bootstrap.switch_mode(to):
+    # Local vars: to
+    # Line: 222
+    pass
+
+def XBotApp._render_bootstrap.toggle_new_visibility(e):
+    # Local vars: e, icon
+    # Line: 234
+    pass
+
+def XBotApp._render_bootstrap.toggle_existing_visibility(e):
+    # Local vars: e, icon
+    # Line: 243
+    pass
+
+def XBotApp._render_bootstrap.submit_new(e):
+    # Local vars: e, pw, cpw, cid, client, res
+    # Line: 295
+    pass
+
+def XBotApp._render_bootstrap.submit_existing(e):
+    # Local vars: e, cid, pw, client, res
+    # Line: 323
+    pass
+
+def XBotApp._render_bootstrap.<lambda>(e):
+    # Local vars: e
+    # Line: 392
+    pass
+
+def XBotApp._render_bootstrap.<lambda>(e):
+    # Local vars: e
+    # Line: 437
+    pass
+
+def XBotApp._render_bootstrap.<lambda>(e):
+    # Local vars: e
+    # Line: 446
+    pass
+
+def XBotApp._render_bootstrap.<lambda>(e):
+    # Local vars: e
+    # Line: 448
+    pass
+
+def XBotApp._render_main_dashboard(self, restore):
+    # Local vars: self, restore, particles, animate_particles, layout
+    # Line: 516
+    pass
+
+def XBotApp._render_main_dashboard.<lambda>(e):
+    # Local vars: e
+    # Line: 552
+    pass
+
+def XBotApp._render_main_dashboard.<lambda>(e):
+    # Local vars: e
+    # Line: 553
+    pass
+
+def XBotApp._render_main_dashboard.<lambda>(e):
+    # Local vars: e
+    # Line: 571
+    pass
+
+def XBotApp._render_main_dashboard.<lambda>(e):
+    # Local vars: e
+    # Line: 572
+    pass
+
+def XBotApp.PurchaseUI():
+    # Local vars: 
+    # Line: 639
+    pass
+
+def XBotApp.PurchaseUI.__init__(self, on_crypto_click, on_apply_coupon, amount, quantity, scrapers):
+    # Local vars: self, on_crypto_click, on_apply_coupon, amount, quantity, scrapers
+    # Line: 640
+    pass
+
+def XBotApp.PurchaseUI._build_crypto_selector(self, on_click):
+    # Local vars: self, on_click, crypto_button, url, label, ident
+    # Line: 665
+    pass
+
+def XBotApp.PurchaseUI._build_crypto_selector.crypto_button(url, label, identifier):
+    # Local vars: url, label, identifier, btn
+    # Line: 666
+    pass
+
+def XBotApp.PurchaseUI.reset_ui(self):
+    # Local vars: self, w, ex
+    # Line: 690
+    pass
+
+def XBotApp.PurchaseUI.set_selected_crypto(self, button):
+    # Local vars: self, button
+    # Line: 711
+    pass
+
+def XBotApp.PurchaseUI.clear_crypto_selection(self):
+    # Local vars: self
+    # Line: 717
+    pass
+
+def XBotApp.PurchaseUI.view(self):
+    # Local vars: self
+    # Line: 723
+    pass
+
+def XBotApp._handle_crypto_click(self, e, ui, page):
+    # Local vars: self, e, ui, page, btn, payment_currency, ctrl, address, amount
+    # Line: 758
+    pass
+
+def XBotApp._handle_apply_coupon(self, e, ui, page):
+    # Local vars: self, e, ui, page, coupon, discounted_amount, ctrl
+    # Line: 792
+    pass
+
+def XBotApp._running_glow(self, pid, dot, speed, strength):
+    # Local vars: self, pid, dot, speed, strength, base, min_opacity, max_opacity, opacity, delta
+    # Line: 821
+    pass
+
+def XBotApp._idle_breathing(self, pid, dot, speed, strength):
+    # Local vars: self, pid, dot, speed, strength, base, min_opacity, max_opacity, opacity, delta
+    # Line: 853
+    pass
+
+def XBotApp._runtime_counter(self, pid, text_element):
+    # Local vars: self, pid, text_element, seconds, h, m, s
+    # Line: 871
+    pass
+
+def XBotApp._set_paused(self, pid):
+    # Local vars: self, pid, dot, state, bot, e, lic
+    # Line: 884
+    pass
+
+def XBotApp._set_paused.<genexpr>(.0):
+    # Local vars: .0, p
+    # Line: 920
+    pass
+
+def XBotApp._scheduled_countdown(self, pid):
+    # Local vars: self, pid, ui_entry, dot, lic, remaining, mins, secs
+    # Line: 924
+    pass
+
+def XBotApp._scheduled_countdown.<genexpr>(.0):
+    # Local vars: .0, p
+    # Line: 953
+    pass
+
+def XBotApp._set_scheduled(self, pid, delay_minutes, skip_countdown):
+    # Local vars: self, pid, delay_minutes, skip_countdown, scheduled_breathing, lic
+    # Line: 974
+    pass
+
+def XBotApp._set_scheduled.scheduled_breathing():
+    # Local vars: base, min_opacity, max_opacity, opacity, delta
+    # Line: 1000
+    pass
+
+def XBotApp._set_scheduled.<genexpr>(.0):
+    # Local vars: .0, p
+    # Line: 1024
+    pass
+
+def XBotApp._toggle_run(self, e, pid, mode, error_case):
+    # Local vars: self, e, pid, mode, error_case, state, run, ui_entry, dot, lic
+    # Line: 1028
+    pass
+
+def XBotApp._toggle_run.<genexpr>(.0):
+    # Local vars: .0, p
+    # Line: 1109
+    pass
+
+def XBotApp._update_status_ui(self, pid, message):
+    # Local vars: self, pid, message, ui
+    # Line: 1117
+    pass
+
+def XBotApp._fatal_status_ui(self, pid, message):
+    # Local vars: self, pid, message, ui
+    # Line: 1130
+    pass
+
+def XBotApp._update_gif_progress(self, pid, count):
+    # Local vars: self, pid, count, ui, drop_limit
+    # Line: 1149
+    pass
+
+def XBotApp._update_bot_settings(self, pid):
+    # Local vars: self, pid, state, bot, settings
+    # Line: 1164
+    pass
+
+def XBotApp._run_automation(self, pid, state):
+    # Local vars: self, pid, state, l, settings, runner, future
+    # Line: 1177
+    pass
+
+def XBotApp._run_automation.<genexpr>(.0):
+    # Local vars: .0, p
+    # Line: 1181
+    pass
+
+def XBotApp._run_automation.<lambda>(msg, p):
+    # Local vars: msg, p
+    # Line: 1194
+    pass
+
+def XBotApp._run_automation.<lambda>(msg, p):
+    # Local vars: msg, p
+    # Line: 1195
+    pass
+
+def XBotApp._run_automation.<lambda>(pid, count):
+    # Local vars: pid, count
+    # Line: 1196
+    pass
+
+def XBotApp._run_automation.runner():
+    # Local vars: 
+    # Line: 1202
+    pass
+
+def XBotApp._fancy_button(self, text, width, on_click, colors):
+    # Local vars: self, text, width, on_click, colors, label, button
+    # Line: 1212
+    pass
+
+def XBotApp._fancy_button.<lambda>(e):
+    # Local vars: e
+    # Line: 1220
+    pass
+
+def XBotApp._profile_row(self, key, data, typ, model):
+    # Local vars: self, key, data, typ, model, dot, runtime_text, runtime, h, m, s, status_label, status_color, status, settings, drop_limit, drop_text, bar, on_run_click, run_text_val, run_colors, run_text, run_btn, edit_text, edit_btn, report_text, report_btn, remove_btn, confirm_remove, remove_text, right_controls
+    # Line: 1226
+    pass
+
+def XBotApp._profile_row.pause_profile(pid):
+    # Local vars: pid, st, state, bot, e, dot, lic
+    # Line: 1272
+    pass
+
+def XBotApp._profile_row.pause_profile.<genexpr>(.0):
+    # Local vars: .0, p
+    # Line: 1332
+    pass
+
+def XBotApp._profile_row.pause_profiles(pids):
+    # Local vars: pids, p
+    # Line: 1338
+    pass
+
+def XBotApp._profile_row.on_run_click(e):
+    # Local vars: e, pause_only, pause_all, should_show_pause_all, pause_dialog, a
+    # Line: 1342
+    pass
+
+def XBotApp._profile_row.on_run_click.pause_only(ev):
+    # Local vars: ev
+    # Line: 1344
+    pass
+
+def XBotApp._profile_row.on_run_click.pause_all(ev):
+    # Local vars: ev, lic, p, targets
+    # Line: 1349
+    pass
+
+def XBotApp._profile_row.on_run_click.<genexpr>(.0):
+    # Local vars: .0, lic, p
+    # Line: 1359
+    pass
+
+def XBotApp._profile_row.on_run_click.<lambda>(ev):
+    # Local vars: ev
+    # Line: 1384
+    pass
+
+def XBotApp._profile_row.<lambda>(e, id):
+    # Local vars: e, id
+    # Line: 1404
+    pass
+
+def XBotApp._profile_row.<lambda>(e):
+    # Local vars: e
+    # Line: 1406
+    pass
+
+def XBotApp._profile_row.confirm_remove(e):
+    # Local vars: e, confirm_dialog
+    # Line: 1410
+    pass
+
+def XBotApp._profile_row.confirm_remove.<lambda>(ev):
+    # Local vars: ev
+    # Line: 1418
+    pass
+
+def XBotApp._profile_row.confirm_remove.<lambda>(e):
+    # Local vars: e
+    # Line: 1424
+    pass
+
+def XBotApp._profile_row.confirm_remove.do_remove():
+    # Local vars: lic, p
+    # Line: 1430
+    pass
+
+def XBotApp._profile_row.confirm_remove.do_remove.<genexpr>(.0):
+    # Local vars: .0, p
+    # Line: 1432
+    pass
+
+def XBotApp._profile_row.<lambda>(e):
+    # Local vars: e
+    # Line: 1488
+    pass
+
+def XBotApp._profile_row.<lambda>(e):
+    # Local vars: e
+    # Line: 1503
+    pass
+
+def XBotApp._update_license_status(self, license_key, override):
+    # Local vars: self, license_key, override, hex_to_rgb, rgb_to_hex, license_data, p, profile_ids, error_color, avg_color, total, active, paused, scheduled, idle, color_map, color_sources, r_sum, g_sum, b_sum, count, has_error, pid, st, bar
+    # Line: 1530
+    pass
+
+def XBotApp._update_license_status.hex_to_rgb(hex_color):
+    # Local vars: hex_color
+    # Line: 1531
+    pass
+
+def XBotApp._update_license_status.hex_to_rgb.<genexpr>(.0):
+    # Local vars: .0, i
+    # Line: 1533
+    pass
+
+def XBotApp._update_license_status.rgb_to_hex(rgb):
+    # Local vars: rgb
+    # Line: 1535
+    pass
+
+def XBotApp._update_license_status.<genexpr>(.0):
+    # Local vars: .0, lic
+    # Line: 1538
+    pass
+
+def XBotApp._update_license_status.<genexpr>(.0):
+    # Local vars: .0, r, _
+    # Line: 1572
+    pass
+
+def XBotApp._update_license_status.<genexpr>(.0):
+    # Local vars: .0, _, g
+    # Line: 1573
+    pass
+
+def XBotApp._update_license_status.<genexpr>(.0):
+    # Local vars: .0, _, b
+    # Line: 1574
+    pass
+
+def XBotApp._update_license_status.<genexpr>(.0):
+    # Local vars: .0, pid
+    # Line: 1579
+    pass
+
+def XBotApp._update_license_status.<genexpr>(.0):
+    # Local vars: .0, r, _
+    # Line: 1604
+    pass
+
+def XBotApp._update_license_status.<genexpr>(.0):
+    # Local vars: .0, _, g
+    # Line: 1605
+    pass
+
+def XBotApp._update_license_status.<genexpr>(.0):
+    # Local vars: .0, _, b
+    # Line: 1606
+    pass
+
+def XBotApp._toggle_profiles(self, e, key):
+    # Local vars: self, e, key, state
+    # Line: 1619
+    pass
+
+def XBotApp._prompt_tag_input(self, key):
+    # Local vars: self, key, save_tag
+    # Line: 1627
+    pass
+
+def XBotApp._prompt_tag_input.save_tag(e):
+    # Local vars: e
+    # Line: 1628
+    pass
+
+def XBotApp._update_tag(self, key, value):
+    # Local vars: self, key, value, lic
+    # Line: 1655
+    pass
+
+def XBotApp._license_card(self, lic, index):
+    # Local vars: self, lic, index, key, typ, tag, expanded, status_bar, icon, expand_icon, p, profiles, expiry_raw, expiry_dt, remaining_days, warn_color, icon_type, expiry_row, tag_row, license_key_row
+    # Line: 1662
+    pass
+
+def XBotApp._license_card.<lambda>(e, k):
+    # Local vars: e, k
+    # Line: 1678
+    pass
+
+def XBotApp._license_card.<lambda>(e):
+    # Local vars: e
+    # Line: 1685
+    pass
+
+def XBotApp._license_card.<lambda>(e, k):
+    # Local vars: e, k
+    # Line: 1728
+    pass
+
+def XBotApp._license_card.<lambda>(e):
+    # Local vars: e
+    # Line: 1732
+    pass
+
+def XBotApp._license_card.<lambda>(e, k):
+    # Local vars: e, k
+    # Line: 1735
+    pass
+
+def XBotApp._license_card.<lambda>(e):
+    # Local vars: e
+    # Line: 1738
+    pass
+
+def XBotApp._license_card.<lambda>(e, k):
+    # Local vars: e, k
+    # Line: 1756
+    pass
+
+def XBotApp._license_card.<lambda>(e):
+    # Local vars: e
+    # Line: 1761
+    pass
+
+def XBotApp._license_card.<lambda>(e, k):
+    # Local vars: e, k
+    # Line: 1764
+    pass
+
+def XBotApp._license_card.<lambda>(e):
+    # Local vars: e
+    # Line: 1776
+    pass
+
+def XBotApp._license_card.<lambda>(e):
+    # Local vars: e
+    # Line: 1778
+    pass
+
+def XBotApp._license_card.<lambda>(e, k):
+    # Local vars: e, k
+    # Line: 1802
+    pass
+
+def XBotApp._license_card.<lambda>(e):
+    # Local vars: e
+    # Line: 1804
+    pass
+
+def XBotApp._license_card.<lambda>(e, k):
+    # Local vars: e, k
+    # Line: 1808
+    pass
+
+def XBotApp._license_card.<lambda>(e):
+    # Local vars: e
+    # Line: 1810
+    pass
+
+def XBotApp._toggle_license_key_visibility(self):
+    # Local vars: self
+    # Line: 1820
+    pass
+
+def XBotApp._render_licenses(self):
+    # Local vars: self, i, lic, card, key, active, paused, scheduled, p, pid, s
+    # Line: 1825
+    pass
+
+def XBotApp._add_license_to_data(self, license_key, browser_id, model, expiry_date, link_remote):
+    # Local vars: self, license_key, browser_id, model, expiry_date, link_remote, lic_type, new_entry
+    # Line: 1882
+    pass
+
+def XBotApp._link_license_remote(self, license_key):
+    # Local vars: self, license_key, client, e
+    # Line: 1907
+    pass
+
+def XBotApp._show_add_profile_dialog(self, license_key):
+    # Local vars: self, license_key, on_close, on_add, add_btn
+    # Line: 1918
+    pass
+
+def XBotApp._show_add_profile_dialog.on_close(e):
+    # Local vars: e
+    # Line: 1932
+    pass
+
+def XBotApp._show_add_profile_dialog.on_add(e):
+    # Local vars: e, val, lic
+    # Line: 1936
+    pass
+
+def XBotApp._show_add_profile_dialog.on_add.<genexpr>(.0):
+    # Local vars: .0, lic, p
+    # Line: 1947
+    pass
+
+def XBotApp._show_license_type_popup(self, license_key):
+    # Local vars: self, license_key, lic, descriptions, explanation, is_upgradeable, upgrade_price_key, on_upgrade_click, action_control
+    # Line: 2006
+    pass
+
+def XBotApp._show_license_type_popup.<genexpr>(.0):
+    # Local vars: .0, l
+    # Line: 2007
+    pass
+
+def XBotApp._show_license_type_popup.on_upgrade_click(e):
+    # Local vars: e
+    # Line: 2026
+    pass
+
+def XBotApp._show_license_type_popup.<lambda>(e):
+    # Local vars: e
+    # Line: 2044
+    pass
+
+def XBotApp._show_license_type_popup.<lambda>(e):
+    # Local vars: e
+    # Line: 2080
+    pass
+
+def XBotApp._show_health_status_popup(self, license_key):
+    # Local vars: self, license_key, lic, expiry_raw, expiry_dt, remaining_days, expiry_text, expiry_icon_color, error_text, error_icon_color, ban_text, ban_icon_color, health_row
+    # Line: 2089
+    pass
+
+def XBotApp._show_health_status_popup.<genexpr>(.0):
+    # Local vars: .0, l
+    # Line: 2090
+    pass
+
+def XBotApp._show_health_status_popup.health_row(icon_color, title, value):
+    # Local vars: icon_color, title, value
+    # Line: 2110
+    pass
+
+def XBotApp._show_health_status_popup.<lambda>(e):
+    # Local vars: e
+    # Line: 2140
+    pass
+
+def XBotApp._show_purchase_page(self, product, cost, details):
+    # Local vars: self, product, cost, details
+    # Line: 2149
+    pass
+
+def XBotApp._show_purchase_page.<lambda>(e):
+    # Local vars: e
+    # Line: 2206
+    pass
+
+def XBotApp._show_purchase_license_dialog(self):
+    # Local vars: self, proceed_to_payment, close_dialog, selector_button, addon1_sub, addon2_title, addon2_sub, confirm_button, close_icon
+    # Line: 2219
+    pass
+
+def XBotApp._show_purchase_license_dialog.recalc_total():
+    # Local vars: base_key, base_price, infinite_price, lifetime_price, total
+    # Line: 2226
+    pass
+
+def XBotApp._show_purchase_license_dialog.toggle_type(e, new_type):
+    # Local vars: e, new_type, btn, selected
+    # Line: 2246
+    pass
+
+def XBotApp._show_purchase_license_dialog.toggle_addon(addon, card):
+    # Local vars: addon, card
+    # Line: 2279
+    pass
+
+def XBotApp._show_purchase_license_dialog.proceed_to_payment(e):
+    # Local vars: e
+    # Line: 2287
+    pass
+
+def XBotApp._show_purchase_license_dialog.close_dialog(e):
+    # Local vars: e
+    # Line: 2292
+    pass
+
+def XBotApp._show_purchase_license_dialog.selector_button(label, is_selected, data_value):
+    # Local vars: label, is_selected, data_value
+    # Line: 2296
+    pass
+
+def XBotApp._show_purchase_license_dialog.selector_button.<lambda>(e):
+    # Local vars: e
+    # Line: 2303
+    pass
+
+def XBotApp._show_purchase_license_dialog.selector_button.<lambda>(e):
+    # Local vars: e
+    # Line: 2304
+    pass
+
+def XBotApp._show_purchase_license_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 2326
+    pass
+
+def XBotApp._show_purchase_license_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 2330
+    pass
+
+def XBotApp._show_purchase_license_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 2340
+    pass
+
+def XBotApp._show_purchase_license_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 2344
+    pass
+
+def XBotApp._show_purchase_license_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 2361
+    pass
+
+def XBotApp._open_edit_purchase_dialog(self, kind, pid):
+    # Local vars: self, kind, pid, hint, icon, on_close, on_proceed, proceed_button
+    # Line: 2437
+    pass
+
+def XBotApp._open_edit_purchase_dialog.on_close(e):
+    # Local vars: e
+    # Line: 2467
+    pass
+
+def XBotApp._open_edit_purchase_dialog.validate_input():
+    # Local vars: val
+    # Line: 2471
+    pass
+
+def XBotApp._open_edit_purchase_dialog.apply_license_change():
+    # Local vars: val, lic, p, new_id, i
+    # Line: 2488
+    pass
+
+def XBotApp._open_edit_purchase_dialog.on_proceed(e):
+    # Local vars: e, price, detail
+    # Line: 2507
+    pass
+
+def XBotApp._open_edit_purchase_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 2544
+    pass
+
+def XBotApp._show_renew_license_dialog(self, license_key):
+    # Local vars: self, license_key, lic, renew_price_key, upgrade_price_key, expiry_raw, expiry_dt, remaining_days, expiry_label, icon_color, action_button, go_to_payment_lifetime, go_to_payment_renew, renew_btn, lifetime_btn, lifetime_message
+    # Line: 2600
+    pass
+
+def XBotApp._show_renew_license_dialog.<genexpr>(.0):
+    # Local vars: .0, l
+    # Line: 2601
+    pass
+
+def XBotApp._show_renew_license_dialog.action_button(icon, text, color, handler):
+    # Local vars: icon, text, color, handler
+    # Line: 2629
+    pass
+
+def XBotApp._show_renew_license_dialog.action_button.<lambda>(e):
+    # Local vars: e
+    # Line: 2645
+    pass
+
+def XBotApp._show_renew_license_dialog.go_to_payment_lifetime(e):
+    # Local vars: e
+    # Line: 2648
+    pass
+
+def XBotApp._show_renew_license_dialog.go_to_payment_renew(e):
+    # Local vars: e
+    # Line: 2653
+    pass
+
+def XBotApp._show_renew_license_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 2703
+    pass
+
+def XBotApp._show_run_confirmation_dialog(self, e, pid, typ, key):
+    # Local vars: self, e, pid, typ, key, border_color, text_hint, run_all_colors, make_field, schedule_switch, alternate_switch, on_schedule_toggle, on_alternate_toggle, run_single, run_all, run_text, run_all_button, run_all_text, close_dialog, close_btn, options_column, c, actions_row, header_row, dialog_content
+    # Line: 2714
+    pass
+
+def XBotApp._show_run_confirmation_dialog.make_field(width, hint):
+    # Local vars: width, hint
+    # Line: 2727
+    pass
+
+def XBotApp._show_run_confirmation_dialog.update_section_highlight():
+    # Local vars: 
+    # Line: 2781
+    pass
+
+def XBotApp._show_run_confirmation_dialog.toggle_run_buttons():
+    # Local vars: 
+    # Line: 2791
+    pass
+
+def XBotApp._show_run_confirmation_dialog.on_schedule_toggle(ev):
+    # Local vars: ev
+    # Line: 2796
+    pass
+
+def XBotApp._show_run_confirmation_dialog.on_alternate_toggle(ev):
+    # Local vars: ev
+    # Line: 2804
+    pass
+
+def XBotApp._show_run_confirmation_dialog.run_single(ev):
+    # Local vars: ev, delayed
+    # Line: 2818
+    pass
+
+def XBotApp._show_run_confirmation_dialog.run_single.delayed():
+    # Local vars: 
+    # Line: 2838
+    pass
+
+def XBotApp._show_run_confirmation_dialog.run_all(ev):
+    # Local vars: ev, lic, p, i, batch_delay, alternate_loop, delayed_all
+    # Line: 2850
+    pass
+
+def XBotApp._show_run_confirmation_dialog.run_all.alternate_loop():
+    # Local vars: idx, batch, p
+    # Line: 2882
+    pass
+
+def XBotApp._show_run_confirmation_dialog.run_all.delayed_all():
+    # Local vars: p
+    # Line: 2913
+    pass
+
+def XBotApp._show_run_confirmation_dialog.close_dialog(ev):
+    # Local vars: ev
+    # Line: 2933
+    pass
+
+def XBotApp._show_settings_dialog(self, pid, mode):
+    # Local vars: self, pid, mode, dialog_mode, close_settings, toggle_randomize, toggle_no_gif, labeled_slider, labeled_dropdown, no_gif_check, drop_message_input, save_profile, group_box, basic_group, gif_group, message_group, leniency_bundle, advanced_group, header_title, mode_tabs, content_body, profile_group, save_settings_btn, save_icon_btn
+    # Line: 2983
+    pass
+
+def XBotApp._show_settings_dialog.show_popup_snackbar(text, duration):
+    # Local vars: text, duration, fade
+    # Line: 2993
+    pass
+
+def XBotApp._show_settings_dialog.show_popup_snackbar.fade():
+    # Local vars: 
+    # Line: 3007
+    pass
+
+def XBotApp._show_settings_dialog.close_settings(e):
+    # Local vars: e
+    # Line: 3014
+    pass
+
+def XBotApp._show_settings_dialog.switch_dialog_mode(new_mode):
+    # Local vars: new_mode
+    # Line: 3021
+    pass
+
+def XBotApp._show_settings_dialog.toggle_randomize(e):
+    # Local vars: e
+    # Line: 3025
+    pass
+
+def XBotApp._show_settings_dialog.toggle_no_gif(e):
+    # Local vars: e
+    # Line: 3030
+    pass
+
+def XBotApp._show_settings_dialog.labeled_slider(label, min_val, max_val, default, key, suffix):
+    # Local vars: label, min_val, max_val, default, key, suffix
+    # Line: 3036
+    pass
+
+def XBotApp._show_settings_dialog.labeled_slider.<lambda>(e):
+    # Local vars: e
+    # Line: 3042
+    pass
+
+def XBotApp._show_settings_dialog.labeled_dropdown(label, options, default, key):
+    # Local vars: label, options, default, key, v
+    # Line: 3046
+    pass
+
+def XBotApp._show_settings_dialog.labeled_dropdown.<lambda>(e):
+    # Local vars: e
+    # Line: 3054
+    pass
+
+def XBotApp._show_settings_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 3064
+    pass
+
+def XBotApp._show_settings_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 3085
+    pass
+
+def XBotApp._show_settings_dialog.save_profile(e):
+    # Local vars: e, _, profile, name
+    # Line: 3091
+    pass
+
+def XBotApp._show_settings_dialog.load_profile(name):
+    # Local vars: name, new_settings
+    # Line: 3107
+    pass
+
+def XBotApp._show_settings_dialog.delete_profile(name):
+    # Local vars: name
+    # Line: 3119
+    pass
+
+def XBotApp._show_settings_dialog.refresh_profile_list():
+    # Local vars: name
+    # Line: 3124
+    pass
+
+def XBotApp._show_settings_dialog.refresh_profile_list.<lambda>(e, n):
+    # Local vars: e, n
+    # Line: 3132
+    pass
+
+def XBotApp._show_settings_dialog.refresh_profile_list.<lambda>(e, n):
+    # Local vars: e, n
+    # Line: 3134
+    pass
+
+def XBotApp._show_settings_dialog.group_box(title, content):
+    # Local vars: title, content
+    # Line: 3143
+    pass
+
+def XBotApp._show_settings_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 3185
+    pass
+
+def XBotApp._show_settings_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 3190
+    pass
+
+def XBotApp._show_settings_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 3195
+    pass
+
+def XBotApp._show_settings_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 3201
+    pass
+
+def XBotApp._show_settings_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 3207
+    pass
+
+def XBotApp._show_settings_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 3231
+    pass
+
+def XBotApp._show_settings_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 3233
+    pass
+
+def XBotApp._show_settings_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 3240
+    pass
+
+def XBotApp._show_settings_dialog.<lambda>(e):
+    # Local vars: e
+    # Line: 3270
+    pass
+
+def XBotApp._show_settings_dialog.save_profile_from_icon(e):
+    # Local vars: e, _, profile, base, i, name
+    # Line: 3274
+    pass
+
+def XBotApp._check_license(self, key):
+    # Local vars: self, key, client, r
+    # Line: 3323
+    pass
+
+def XBotApp._show_add_license_dialog(self):
+    # Local vars: self, on_close, on_change, on_add
+    # Line: 3333
+    pass
+
+def XBotApp._show_add_license_dialog.is_license_expired(info):
+    # Local vars: info, expiry, now
+    # Line: 3350
+    pass
+
+def XBotApp._show_add_license_dialog.on_close(e):
+    # Local vars: e
+    # Line: 3358
+    pass
+
+def XBotApp._show_add_license_dialog.on_change(e):
+    # Local vars: e, validate
+    # Line: 3362
+    pass
+
+def XBotApp._show_add_license_dialog.on_change.<genexpr>(.0):
+    # Local vars: .0, lic
+    # Line: 3366
+    pass
+
+def XBotApp._show_add_license_dialog.on_change.validate():
+    # Local vars: info
+    # Line: 3382
+    pass
+
+def XBotApp._show_add_license_dialog.on_add(e):
+    # Local vars: e, info, browser_id, model, expiry
+    # Line: 3398
+    pass
+
+def XBotApp._show_add_license_dialog.on_add.<genexpr>(.0):
+    # Local vars: .0, lic
+    # Line: 3400
+    pass
+
+def XBotApp._restore_licenses(self):
+    # Local vars: self, client, res, data, licenses, local_profiles, lic, p, pid, key, license_data, entry, e
+    # Line: 3453
+    pass
+
+def XBotApp._restore_licenses.<genexpr>(.0):
+    # Local vars: .0, p
+    # Line: 3512
+    pass
+
+def XBotApp._save_profiles_local(self):
+    # Local vars: self, data, lic, p, f, e
+    # Line: 3521
+    pass
+
+def XBotApp._load_profiles_local(self):
+    # Local vars: self, f, content, e
+    # Line: 3534
+    pass
+
+def XBotApp._save_settings_local(self):
+    # Local vars: self, data, f, e
+    # Line: 3546
+    pass
+
+def XBotApp._load_settings_local(self):
+    # Local vars: self, f, content, data, e
+    # Line: 3561
+    pass
+
+def _get_app():
+    # Local vars: 
+    # Line: 3586
+    pass
+
+def bootstrap(page):
+    # Local vars: page
+    # Line: 3593
+    pass
+
+def main(page, restore):
+    # Local vars: page, restore
+    # Line: 3597
+    pass
+
