@@ -1,0 +1,192 @@
+   0           0 COPY_FREE_VARS           0
+
+   1           2 CHECK_EG_MATCH
+               4 RETURN_VALUE
+               6 RETURN_VALUE
+               8 RETURN_GENERATOR
+              10 POP_JUMP_FORWARD_IF_FALSE     0 (to 12)
+
+   2     >>   12 RETURN_VALUE
+              14 RETURN_VALUE
+              16 RETURN_GENERATOR
+              18 POP_JUMP_FORWARD_IF_FALSE     1 (to 22)
+
+   3          20 RETURN_VALUE
+         >>   22 RETURN_VALUE
+              24 RETURN_GENERATOR
+              26 POP_JUMP_FORWARD_IF_FALSE     2 (to 32)
+
+   4          28 RETURN_VALUE
+              30 RETURN_VALUE
+         >>   32 RETURN_GENERATOR
+              34 POP_JUMP_FORWARD_IF_FALSE     3 (to 42)
+
+   5          36 RETURN_VALUE
+              38 RETURN_VALUE
+              40 RETURN_GENERATOR
+         >>   42 LOAD_ASSERTION_ERROR
+              44 POP_JUMP_FORWARD_IF_FALSE     4 (to 54)
+              46 LOAD_ASSERTION_ERROR
+              48 POP_JUMP_FORWARD_IF_FALSE     5 (to 60)
+              50 MATCH_SEQUENCE
+
+   6          52 RETURN_VALUE
+         >>   54 RETURN_VALUE
+              56 RETURN_GENERATOR
+              58 POP_JUMP_FORWARD_IF_FALSE     6 (to 72)
+
+   7     >>   60 RETURN_VALUE
+              62 RETURN_VALUE
+              64 RETURN_GENERATOR
+              66 POP_JUMP_FORWARD_IF_FALSE     7 (to 82)
+
+   9          68 RETURN_VALUE
+              70 RETURN_VALUE
+         >>   72 RETURN_GENERATOR
+              74 LOAD_ASSERTION_ERROR
+              76 POP_JUMP_FORWARD_IF_FALSE     9 (to 96)
+              78 MATCH_SEQUENCE
+
+  10          80 RETURN_VALUE
+         >>   82 RETURN_VALUE
+              84 RETURN_GENERATOR
+              86 LOAD_GLOBAL              2 (asyncio)
+              98 POP_JUMP_FORWARD_IF_FALSE    12 (to 124)
+             100 LOAD_ASSERTION_ERROR
+             102 POP_JUMP_FORWARD_IF_FALSE    13 (to 130)
+             104 MATCH_SEQUENCE
+
+  12         106 RETURN_VALUE
+             108 RETURN_VALUE
+             110 RETURN_GENERATOR
+             112 POP_JUMP_FORWARD_IF_FALSE    14 (to 142)
+             114 RETURN_VALUE
+             116 RETURN_VALUE
+             118 RETURN_GENERATOR
+             120 POP_JUMP_FORWARD_IF_FALSE    15 (to 152)
+             122 RETURN_VALUE
+         >>  124 RETURN_VALUE
+             126 RETURN_GENERATOR
+             128 POP_JUMP_FORWARD_IF_FALSE    16 (to 162)
+
+  13     >>  130 RETURN_VALUE
+             132 RETURN_VALUE
+             134 RETURN_GENERATOR
+             136 LOAD_ASSERTION_ERROR
+             138 POP_JUMP_FORWARD_IF_FALSE    18 (to 176)
+             140 MATCH_SEQUENCE
+
+  15     >>  142 UNPACK_SEQUENCE         14
+             146 CACHE
+             148 CACHE
+             150 CACHE
+         >>  152 CACHE
+             154 CACHE
+             156 CACHE
+             158 CACHE
+             160 CACHE
+         >>  162 CACHE
+             164 LIST_TO_TUPLE
+             166 CACHE
+             168 CACHE
+             170 CACHE
+             172 CACHE
+             174 CACHE
+         >>  176 CACHE
+             178 CACHE
+             180 CACHE
+             182 CACHE
+             184 UNPACK_SEQUENCE         14
+             188 CACHE
+             190 CACHE
+             192 CACHE
+             194 CACHE
+             196 CACHE
+             198 CACHE
+             200 CACHE
+             202 CACHE
+             204 CACHE
+             206 LIST_TO_TUPLE
+             208 CACHE
+             210 CACHE
+             212 CACHE
+             214 CACHE
+             216 CACHE
+             218 CACHE
+             220 CACHE
+             222 CACHE
+             224 CACHE
+             226 RETURN_VALUE
+             228 BEFORE_WITH
+             230 CACHE
+             232 CACHE
+             234 CACHE
+             236 RETURN_VALUE
+             238 BEFORE_WITH
+             240 CACHE
+             242 CACHE
+             244 CACHE
+             246 POP_JUMP_FORWARD_IF_FALSE    22 (to 292)
+
+  16         248 UNPACK_SEQUENCE         14
+             252 CACHE
+             254 CACHE
+             256 CACHE
+             258 CACHE
+             260 CACHE
+             262 CACHE
+             264 CACHE
+             266 CACHE
+             268 CACHE
+             270 LIST_TO_TUPLE
+             272 CACHE
+             274 CACHE
+             276 CACHE
+             278 CACHE
+             280 CACHE
+             282 CACHE
+             284 CACHE
+             286 CACHE
+             288 CACHE
+             290 UNPACK_SEQUENCE         14
+             294 CACHE
+             296 CACHE
+             298 CACHE
+             300 CACHE
+             302 CACHE
+             304 CACHE
+             306 CACHE
+             308 CACHE
+             310 CACHE
+             312 LIST_TO_TUPLE
+             314 CACHE
+             316 CACHE
+             318 CACHE
+             320 CACHE
+             322 CACHE
+             324 CACHE
+             326 CACHE
+             328 CACHE
+             330 CACHE
+             332 RETURN_VALUE
+             334 BEFORE_WITH
+             336 CACHE
+             338 CACHE
+             340 CACHE
+             342 RETURN_VALUE
+             344 BEFORE_WITH
+             346 CACHE
+             348 CACHE
+             350 CACHE
+             352 POP_JUMP_FORWARD_IF_FALSE    23 (to 400)
+
+  22         354 CALL                     0
+             364 BEFORE_WITH
+             366 CACHE
+             368 CACHE
+             370 CACHE
+             372 POP_JUMP_FORWARD_IF_FALSE    24 (to 422)
+
+3584         374 RETURN_VALUE
+             376 PRECALL                 25
+             380 RETURN_VALUE
